@@ -1,0 +1,579 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #222;
+}
+
+header {
+    background: #243b64;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+.dashboard {
+    padding: 40px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0002;
+}
+
+.card p {
+    margin: 15px 0;
+}
+
+button {
+    background: #243b64;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #365b94;
+}
+.timetable-form {
+    background: white;
+    max-width: 450px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0002;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.timetable-form input,
+.timetable-form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.dashboard h2 {
+    margin-top: 30px;
+}
+
+.timetable {
+    width: 100%;
+    max-width: 900px;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+.timetable th,
+.timetable td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.timetable th {
+    background: #243b64;
+    color: white;
+}
+
+.timetable tr:nth-child(even) {
+    background: #f0f4f8;
+}
+/* Dashboard Statistics */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin: 15px auto;
+    max-width: 650px;
+}
+
+.stats .card {
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.stats .card h2 {
+    font-size: 28px;
+    color: #2563eb;
+    margin: 5px 0;
+}
+
+.stats .card h3 {
+    margin: 5px 0;
+}
+/* Professional Homepage Design */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Dashboard */
+
+.dashboard {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.dashboard > h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Navigation Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cards .card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Buttons */
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 700px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard {
+        padding: 15px;
+    }
+}
+/* Study Analytics */
+
+.analytics {
+    max-width: 650px;
+    margin: 35px auto;
+}
+
+.analytics h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.progress-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.progress-track {
+    width: 100%;
+    height: 12px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #2563eb;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+/* Study Calendar */
+
+.calendar-section {
+    max-width: 650px;
+    margin: 35px auto;
+}
+
+.calendar-section h2 {
+    text-align: center;
+}
+
+.calendar-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header h3 {
+    margin: 0;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    text-align: center;
+}
+
+.calendar-day-heading {
+    font-weight: bold;
+    padding: 10px 0;
+    color: #2563eb;
+}
+
+.calendar-date {
+    padding: 12px 5px;
+    border-radius: 8px;
+    background: #f1f5f9;
+}
+
+.calendar-date:hover {
+    background: #dbeafe;
+}
+
+.calendar-date.today {
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+}
+/* Daily Study Planner */
+
+
+.daily-planner ul {
+    padding-left: 20px;
+}
+
+.daily-planner li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f1f5f9;
+    border-radius: 8px;
+}
+
+.calendar-date.selected {
+    outline: 2px solid #2563eb;
+}
+
+.calendar-date.has-plan {
+    border-bottom: 3px solid #16a34a;
+}
+/* Center Daily Study Planner */
+
+.daily-planner {
+    max-width: 550px;
+    margin: 25px auto 0;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.daily-planner h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.daily-planner input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+.daily-planner button {
+    margin: 5px;
+}
+
+.daily-planner ul {
+    padding: 0;
+    list-style: none;
+}
+
+.daily-planner li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 8px;
+}
+/* Study plan completion styling */
+
+.daily-planner li span {
+    flex: 1;
+}
+
+.daily-planner li button {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.daily-planner li button:first-of-type {
+    background: #16a34a;
+    color: white;
+}
+
+.daily-planner li button:last-of-type {
+    background: #dc2626;
+    color: white;
+}
+
+.daily-planner li.completed span {
+    text-decoration: line-through;
+    color: #64748b;
+}
+/* Enhanced Dashboard Statistics */
+
+.stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.stats .card {
+    padding: 25px 15px;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.stats .card h3 {
+    font-size: 16px;
+    color: #475569;
+}
+
+.stats .card h2 {
+    font-size: 32px;
+    color: #2563eb;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* Responsive Statistics Cards */
+
+@media (max-width: 700px) {
+    .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Enhanced Study Calendar */
+
+.calendar-section {
+    max-width: 750px;
+    margin: 45px auto;
+}
+
+.calendar-card {
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+}
+
+.calendar-header h3 {
+    font-size: 22px;
+    color: #1e3a8a;
+}
+
+.calendar-grid {
+    gap: 10px;
+}
+
+.calendar-day-heading {
+    font-size: 14px;
+    color: #1e40af;
+}
+
+.calendar-date {
+    min-height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid transparent;
+}
+
+.calendar-date:hover {
+    background: #dbeafe;
+    border-color: #2563eb;
+}
+
+.calendar-date.today {
+    background: #2563eb;
+    color: white;
+}
+
+.calendar-date.selected {
+    outline: 2px solid #1e40af;
+    outline-offset: -2px;
+}
+
+.calendar-date.has-plan {
+    border-bottom: 3px solid #16a34a;
+}
+
+.calendar-date small {
+    font-size: 10px;
+    color: #16a34a;
+}
+
+.calendar-date.today small {
+    color: white;
+}
+/* Enhanced Daily Study Planner */
+
+.daily-planner {
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 28px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.daily-planner h3 {
+    color: #1e3a8a;
+    font-size: 19px;
+}
+
+.daily-planner input {
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.daily-planner input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+.daily-planner li {
+    border: 1px solid #e2e8f0;
+    transition: 0.2s;
+}
+
+.daily-planner li:hover {
+    background: #eff6ff;
+}
+
+.daily-planner li button:hover {
+    opacity: 0.85;
+}
+
+.daily-progress {
+    background: #f1f5f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.daily-progress p {
+    margin-bottom: 8px;
+}

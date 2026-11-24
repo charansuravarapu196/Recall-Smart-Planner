@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>My Study Planner</h1>
+    <p>Plan your study sessions and track your progress.</p>
+
+    <div class="timetable-form">
+        <input type="text" id="studySubject" placeholder="Enter subject">
+        <input type="text" id="studyTopic" placeholder="Enter topic">
+
+        <label>Study Date:</label>
+        <input type="date" id="studyDate">
+
+        <label>Start Time:</label>
+        <input type="time" id="studyStart">
+
+        <label>End Time:</label>
+        <input type="time" id="studyEnd">
+
+        <button onclick="addStudySession()">Add Study Session</button>
+    </div>
+
+    <h2>My Study Sessions</h2>
+
+    <table class="timetable">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Topic</th>
+                <th>Date</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Completed</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="studyBody"></tbody>
+    </table>
+
+    <br>
+    <button onclick="window.location.href='index.html'">
+        Back to Dashboard
+    </button>
+
+    <script src="js/study.js"></script>
+</body>
+</html>

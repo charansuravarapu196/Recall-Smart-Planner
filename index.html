@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Smart Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Smart Planner</h1>
+        <p>Plan Smart. Study Better. Achieve More.</p>
+    </header>
+
+    <main class="dashboard">
+        <h2>Welcome to Your Dashboard!</h2>
+        <div class="stats">
+
+    <div class="card">
+        <h3>Total Classes</h3>
+        <h2 id="classCount">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Study Sessions</h3>
+        <h2 id="studyCount">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Total Tasks</h3>
+        <h2 id="taskCount">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Completed Tasks</h3>
+        <h2 id="completedCount">0</h2>
+    </div>
+    <div class="card">
+    <h3>Total Daily Plans</h3>
+    <h2 id="totalDailyPlans">0</h2>
+</div>
+
+<div class="card">
+    <h3>Completed Study Plans</h3>
+    <h2 id="completedDailyPlans">0</h2>
+</div>
+
+</div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>My Timetable</h3>
+                <p>Organize your daily classes.</p>
+                <button onclick="openPage('Timetable')">
+                    View Timetable
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>My Tasks</h3>
+                <p>Manage your assignments.</p>
+                <button onclick="openPage('Tasks')">
+                    View Tasks
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>Study Planner</h3>
+                <p>Plan your study sessions.</p>
+                <button onclick="openPage('Study Planner')">
+                    Start Planning
+                </button>
+            </div>
+        </div>
+        <section class="analytics">
+    <h2>My Study Progress</h2>
+
+    <div class="progress-card">
+        <h3>Task Completion</h3>
+        <p id="taskProgressText">0% Completed</p>
+        <div class="progress-track">
+            <div id="taskProgressBar" class="progress-fill"></div>
+        </div>
+    </div>
+
+    <div class="progress-card">
+        <h3>Study Session Completion</h3>
+        <p id="studyProgressText">0% Completed</p>
+        <div class="progress-track">
+            <div id="studyProgressBar" class="progress-fill"></div>
+        </div>
+    </div>
+</section>
+<section class="calendar-section">
+
+    <h2>My Study Calendar</h2>
+
+    <div class="calendar-card">
+
+        <div class="calendar-header">
+            <button onclick="changeMonth(-1)">❮</button>
+            <h3 id="monthYear"></h3>
+            <button onclick="changeMonth(1)">❯</button>
+        </div>
+
+        <div class="calendar-grid" id="calendarDays"></div>
+
+    </div>
+
+</section>
+
+<div class="daily-planner">
+
+    <h3 id="selectedDate">Select a Date</h3>
+
+    <input
+        type="text"
+        id="dailyPlan"
+        placeholder="Enter your study plan"
+    >
+
+    <button onclick="addDailyPlan()">Add Plan</button>
+
+    <h3>My Plans</h3>
+
+<div class="daily-progress">
+    <p id="dailyProgressText">0% Completed</p>
+
+    <div class="progress-track">
+        <div id="dailyProgressBar" class="progress-fill"></div>
+    </div>
+
+    <p id="dailyPlanStats">
+        Total: 0 | Completed: 0 | Pending: 0
+    </p>
+</div>
+
+<ul id="dailyPlanList"></ul>
+
+</div>
+
+</main>
+
+    <script src="js/script.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/calendar.js"></script>
+
+</body>
+</html>
